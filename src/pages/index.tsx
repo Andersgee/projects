@@ -10,6 +10,7 @@ import img_varavagar from "public/projectimages/varavagar.jpg";
 import img_climatevisualizer from "public/projectimages/climatevisualizer.png";
 import img_wasmmozart from "public/projectimages/wasmMozart.png";
 import img_wasmshakespeare from "public/projectimages/wasmShakespeare.png";
+import { AndyfxLogoAnimated } from "src/components/AndyfxLogoAnimated";
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,10 @@ const Home: NextPage = () => {
       />
 
       <Nav />
+      <div className="flex justify-center items-center my-12">
+        <AndyfxLogoAnimated />
+        <h1 className="font-thin text-4xl">Andyfx</h1>
+      </div>
       <main className="flex justify-center mt-4 mb-8">
         <div className="mx-4">
           <div className="flex justify-center mb-6">
