@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       />
       <Nav />
       {/* Header */}
-      <div className="flex justify-center items-center my-12">
+      <div className="flex justify-center items-center my-16">
         <AndyfxLogoAnimated />
         <h1 className="font-thin text-4xl">Andyfx</h1>
       </div>
@@ -89,47 +89,22 @@ const Home: NextPage = () => {
       </main>
 
       {/* Footer */}
-
       <div className="flex justify-center">
-        <div className="md:grid md:grid-cols-2">
-          <div className="mb-2">
-            <h2 className="text-4xl text-neutral-600 dark:text-neutral-300 font-normal">Contact</h2>
-            <p className="text-lg">andersgee@gmail.com</p>
+        <div className="md:grid md:grid-cols-2 mb-8 flex-1 max-w-xl">
+          <div className="flex justify-center mb-8 md:mt-8">
+            <div>
+              <h2 className="text-center text-4xl text-neutral-600 dark:text-neutral-300 font-normal">Contact</h2>
+              <p className="text-lg text-center">andersgee@gmail.com</p>
+            </div>
           </div>
-          <AndersSignature />
+          <div className="flex justify-center">
+            <AndersSignature />
+          </div>
         </div>
       </div>
     </>
   );
 };
-
-/*
-const Footer = styled.footer`
-  grid-area: footer;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: ${(props) => props.theme.color.paper};
-
-  > div {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    width: 100%;
-    max-width: 1000px;
-
-    @media ${(props) => props.theme.media.md_and_above} {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  }
-`;
-
-*/
 
 export default Home;
 
