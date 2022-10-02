@@ -26,14 +26,14 @@ const Home: NextPage = () => {
       {/* Header */}
       <div className="flex justify-center items-center my-16">
         <AndyfxLogoAnimated />
-        <h1 className="font-thin text-4xl">Andyfx</h1>
+        <h1 className="font-thin text-4xl text-neutral-700 dark:text-neutral-200">Andyfx</h1>
       </div>
 
       {/* Projects */}
       <main className="flex justify-center mt-4 mb-8">
         <div className="mx-4">
           <div className="flex justify-center mb-6">
-            <h2 className="text-4xl text-neutral-600 dark:text-neutral-300 font-normal">Latest Projects</h2>
+            <h2 className="text-2xl text-neutral-600 dark:text-neutral-300 font-normal">Latest Projects</h2>
           </div>
 
           <Card

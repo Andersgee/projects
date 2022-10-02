@@ -18,14 +18,12 @@ export function Card({ href, img, label, description, flipOrder }: CardProps) {
       </a>
       <div className="h-40 m-4 flex flex-col justify-between">
         <div>
-          <h3 className="mb-2 text-4xl text-neutral-700 dark:text-neutral-200 font-normal">{label}</h3>
+          <h3 className="mb-2 text-2xl text-neutral-700 dark:text-neutral-200 font-normal">{label}</h3>
+
           <p className="">{description}</p>
         </div>
-        <a
-          className="mx-auto bg-indigo-200 hover:bg-indigo-100 dark:bg-indigo-900 dark:hover:bg-indigo-800 ease-out duration-150 p-2 rounded-full w-40 text-center underline decoration-dotted hover:decoration-solid"
-          href={href}
-        >
-          {label}
+        <a className="text-center underline decoration-dotted hover:decoration-solid" href={href}>
+          view project
         </a>
       </div>
     </div>
