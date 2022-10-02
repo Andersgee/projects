@@ -11,6 +11,7 @@ import img_climatevisualizer from "public/projectimages/climatevisualizer.png";
 import img_wasmmozart from "public/projectimages/wasmMozart.png";
 import img_wasmshakespeare from "public/projectimages/wasmShakespeare.png";
 import { AndyfxLogoAnimated } from "src/components/AndyfxLogoAnimated";
+import { AndersSignature } from "src/components/AndersSignature";
 
 const Home: NextPage = () => {
   return (
@@ -21,12 +22,14 @@ const Home: NextPage = () => {
         domainUrl="https://www.andyfx.net"
         url="https://www.andyfx.net"
       />
-
       <Nav />
+      {/* Header */}
       <div className="flex justify-center items-center my-12">
         <AndyfxLogoAnimated />
         <h1 className="font-thin text-4xl">Andyfx</h1>
       </div>
+
+      {/* Projects */}
       <main className="flex justify-center mt-4 mb-8">
         <div className="mx-4">
           <div className="flex justify-center mb-6">
@@ -84,9 +87,49 @@ const Home: NextPage = () => {
           />
         </div>
       </main>
+
+      {/* Footer */}
+
+      <div className="flex justify-center">
+        <div className="md:grid md:grid-cols-2">
+          <div className="mb-2">
+            <h2 className="text-4xl text-neutral-600 dark:text-neutral-300 font-normal">Contact</h2>
+            <p className="text-lg">andersgee@gmail.com</p>
+          </div>
+          <AndersSignature />
+        </div>
+      </div>
     </>
   );
 };
+
+/*
+const Footer = styled.footer`
+  grid-area: footer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: ${(props) => props.theme.color.paper};
+
+  > div {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    max-width: 1000px;
+
+    @media ${(props) => props.theme.media.md_and_above} {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+`;
+
+*/
 
 export default Home;
 
