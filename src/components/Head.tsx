@@ -47,23 +47,22 @@ export function Head({
   twitter_data1 = "",
   twitter_label2 = "",
   twitter_data2 = "",
-  themeColor = "#A4D1F3",
 }: Props) {
   return (
     <NextHead>
       <meta charSet="utf-8" />
       <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
       <link rel="icon" type="image/png" href="/icons/favicon.png" />
+      {/*<link rel="apple-touch-icon" href="/icons/favicon.png" />*/}
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content={description} />
       <meta name="author" content="Anders Gustafsson" />
-      <link rel="apple-touch-icon" href={imageUrl} />
+
       <link rel="manifest" href="/manifest.json" />
       <title>{title}</title>
 
       {/* pwa related? */}
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="theme-color" content={themeColor} />
 
       {/* facebook open graph tags*/}
       <meta property="og:type" content="website" />
