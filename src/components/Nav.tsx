@@ -1,8 +1,8 @@
-import Link from "next/link";
+//import Link from "next/link";
 import React from "react";
 import { ThemeToggleButton } from "src/components/ThemeToggleButton";
 
-const LINK_STYLE = "underline decoration-dotted hover:decoration-solid";
+//const LINK_STYLE = "underline decoration-dotted hover:decoration-solid";
 
 export function Nav() {
   return (

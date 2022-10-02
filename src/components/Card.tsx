@@ -19,7 +19,6 @@ export function Card({ href, img, label, description, flipOrder }: CardProps) {
       <div className="h-40 m-4 flex flex-col justify-between">
         <div>
           <h3 className="mb-2 text-2xl text-neutral-700 dark:text-neutral-200 font-normal">{label}</h3>
-
           <p className="">{description}</p>
         </div>
         <a className="text-center underline decoration-dotted hover:decoration-solid" href={href}>

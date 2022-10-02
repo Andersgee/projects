@@ -5,6 +5,7 @@ import { AndyfxLogoAnimated } from "src/components/AndyfxLogoAnimated";
 import { AndersSignature } from "src/components/AndersSignature";
 import { Card } from "src/components/Card";
 
+import img_redditnews from "public/projectimages/redditnews.png";
 import img_svgbattle from "public/projectimages/svgbattle.png";
 import img_julia2wat from "public/projectimages/julia2wat.png";
 import img_weather from "public/projectimages/weather.jpg";
@@ -37,6 +38,13 @@ const Home: NextPage = () => {
           </div>
 
           <Card
+            href="https://news.andyfx.net"
+            img={img_redditnews}
+            label="Reddit news"
+            description="Simple overview of reddit news. Uses incremental static regeneration."
+            flipOrder
+          />
+          <Card
             href="https://svgbattle.andyfx.net"
             img={img_svgbattle}
             label="Svg Battle"
@@ -53,9 +61,8 @@ const Home: NextPage = () => {
             href="https://weather.andyfx.net/"
             img={img_weather}
             label="Weather"
-            description="How much water a tree would need and weather forecast in both visual and table format."
+            description="How much water a tree needs and weather forecast. Both table and visual format."
           />
-
           <Card
             href="https://www.varavagar.se"
             img={img_varavagar}
@@ -63,14 +70,12 @@ const Home: NextPage = () => {
             description="Map, information and maintenance needs for public roads of Sweden. (VåraVägar.se)"
             flipOrder
           />
-
           <Card
             href="https://www.climatevisualizer.com"
             img={img_climatevisualizer}
             label="Climate Visualizer"
             description="What the worlds carbon budget means on a local municipality level."
           />
-
           <Card
             href="https://andersgee.github.io/posts/wasmMozart/index.html"
             img={img_wasmmozart}
@@ -78,7 +83,6 @@ const Home: NextPage = () => {
             description="Neural net trained on mozart music brought to the web with webassembly."
             flipOrder
           />
-
           <Card
             href="https://andersgee.github.io/posts/wasmShakespeare/index.html"
             img={img_wasmshakespeare}
