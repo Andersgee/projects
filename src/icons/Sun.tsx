@@ -1,7 +1,7 @@
 export function Sun() {
   return (
     <svg width="48" height="48" viewBox="0 0 400 400" aria-hidden="true">
-      <circle fill="#c7c465" cx="200" cy="200" r="80">
+      <circle fill="#e5dd00" cx="200" cy="200" r="80">
         <animate
           attributeName="r"
           fill="freeze"
@@ -16,7 +16,7 @@ export function Sun() {
       </circle>
       <path
         fill="none"
-        stroke="#c7c465"
+        stroke="#e5dd00"
         strokeWidth="25"
         strokeLinecap="round"
         d="

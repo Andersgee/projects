@@ -1,7 +1,7 @@
 export function Moon() {
   return (
     <svg width="48" height="48" viewBox="0 0 400 400" aria-hidden="true">
-      <circle fill="#92abab" cx="200" cy="200" r="80">
+      <circle fill="#82acac" cx="200" cy="200" r="80">
         <animate
           attributeName="r"
           fill="freeze"
@@ -16,7 +16,7 @@ export function Moon() {
       </circle>
       <path
         fill="none"
-        stroke="#92abab"
+        stroke="#82acac"
         strokeWidth="25"
         strokeLinecap="round"
         d="
