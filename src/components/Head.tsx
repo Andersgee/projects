@@ -53,7 +53,6 @@ export function Head({
       <meta charSet="utf-8" />
       <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
       <link rel="icon" type="image/png" href="/icons/favicon.png" />
-      {/*<link rel="apple-touch-icon" href="/icons/favicon.png" />*/}
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content={description} />
       <meta name="author" content="Anders Gustafsson" />
@@ -61,8 +60,9 @@ export function Head({
       <link rel="manifest" href="/manifest.json" />
       <title>{title}</title>
 
-      {/* pwa related? */}
+      {/* pwa related */}
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="apple-touch-icon" href="/icons/apple-touch-icon-192x192.png" />
 
       {/* facebook open graph tags*/}
       <meta property="og:type" content="website" />

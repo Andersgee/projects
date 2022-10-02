@@ -38,6 +38,7 @@ const Home: NextPage = () => {
           </div>
 
           <Card
+            priority
             href="https://news.andyfx.net"
             img={img_redditnews}
             label="Reddit news"

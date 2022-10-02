@@ -6,14 +6,19 @@ type CardProps = {
   label: string;
   description: string;
   flipOrder?: boolean;
+  /**
+   * Use this on the largest contentful paint. (disables lazy loading and improves performance score).
+   * Only do this when the image is instantly visible on page load (aka "above the fold").
+   */
+  priority?: boolean;
 };
 
-export function Card({ href, img, label, description, flipOrder }: CardProps) {
+export function Card({ href, img, label, description, flipOrder, priority }: CardProps) {
   return (
     <div className="mb-10 w-full shadow-md bg-white dark:bg-neutral-800 rounded-lg overflow-hidden md:grid md:grid-cols-2">
       <a href={href} className={`${flipOrder ? "md:order-last" : ""}`}>
         <div className={`relative h-40 md:h-52`}>
-          <Image alt="Svg Battle" src={img} layout="fill" objectFit="cover" />
+          <Image alt="Svg Battle" src={img} layout="fill" objectFit="cover" priority={priority} placeholder="blur" />
         </div>
       </a>
       <div className="h-40 m-4 flex flex-col justify-between">

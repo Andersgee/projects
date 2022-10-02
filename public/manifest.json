@@ -13,5 +13,7 @@
       "purpose": "any"
     }
   ],
-  "splash_pages": null
+  "splash_pages": null,
+  "theme_color": "A4D1F3",
+  "background_color": "FCFCFC"
 }
