@@ -7,8 +7,8 @@ import { z } from "zod";
  */
 export const serverSchema = z.object({
   // SERVERVAR: z.string(),
-  REDDIT_CLIENT_ID: z.string(),
-  REDDIT_CLIENT_SECRET: z.string(),
+  //REDDIT_CLIENT_ID: z.string(),
+  //REDDIT_CLIENT_SECRET: z.string(),
 });
 
 /**
