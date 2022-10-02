@@ -29,7 +29,7 @@ export function ThemeToggleButton() {
       onClick={toggleTheme}
       className="justify-around p-3 font-medium hover:opacity-75 transition duration-100 ease-out hover:ease-in"
     >
-      {darkIcon ? "darkmode" : "lightmode"}
+      {darkIcon ? "theme" : "theme"}
     </button>
   );
 }
