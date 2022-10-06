@@ -13,6 +13,7 @@ import img_varavagar from "public/projectimages/varavagar.jpg";
 import img_climatevisualizer from "public/projectimages/climatevisualizer.png";
 import img_wasmmozart from "public/projectimages/wasmMozart.png";
 import img_wasmshakespeare from "public/projectimages/wasmShakespeare.png";
+import img_sharpest from "public/projectimages/sharpest.png";
 
 const Home: NextPage = () => {
   return (
@@ -36,6 +37,14 @@ const Home: NextPage = () => {
           <div className="flex justify-center mb-6">
             <h2 className="text-2xl text-neutral-600 dark:text-neutral-300 font-normal">Latest Projects</h2>
           </div>
+
+          <Card
+            priority
+            href="https://sharpest.andyfx.net"
+            img={img_sharpest}
+            label="Sharpest pokemon"
+            description="Cast your vote on who the sharpest pokemon is."
+          />
 
           <Card
             priority
