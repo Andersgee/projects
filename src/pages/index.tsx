@@ -7,7 +7,6 @@ import { Card, CardNonstatic } from "src/components/Card";
 
 import img_sharpest from "public/projectimages/sharpest.png";
 import img_redditnews from "public/projectimages/redditnews.png";
-import img_randomsvgface from "public/projectimages/randomsvgface.png";
 import img_svgbattle from "public/projectimages/svgbattle.png";
 import img_julia2wat from "public/projectimages/julia2wat.png";
 import img_weather from "public/projectimages/weather.jpg";
