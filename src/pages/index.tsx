@@ -3,9 +3,11 @@ import { Head } from "src/components/Head";
 import { Nav } from "src/components/Nav";
 import { AndyfxLogoAnimated } from "src/components/AndyfxLogoAnimated";
 import { AndersSignature } from "src/components/AndersSignature";
-import { Card } from "src/components/Card";
+import { Card, CardNonstatic } from "src/components/Card";
 
+import img_sharpest from "public/projectimages/sharpest.png";
 import img_redditnews from "public/projectimages/redditnews.png";
+import img_randomsvgface from "public/projectimages/randomsvgface.png";
 import img_svgbattle from "public/projectimages/svgbattle.png";
 import img_julia2wat from "public/projectimages/julia2wat.png";
 import img_weather from "public/projectimages/weather.jpg";
@@ -13,7 +15,6 @@ import img_varavagar from "public/projectimages/varavagar.jpg";
 import img_climatevisualizer from "public/projectimages/climatevisualizer.png";
 import img_wasmmozart from "public/projectimages/wasmMozart.png";
 import img_wasmshakespeare from "public/projectimages/wasmShakespeare.png";
-import img_sharpest from "public/projectimages/sharpest.png";
 
 const Home: NextPage = () => {
   return (
@@ -44,16 +45,22 @@ const Home: NextPage = () => {
             img={img_sharpest}
             label="Sharpest pokemon"
             description="Cast your vote on who the sharpest pokemon is."
+            flipOrder
           />
-
           <Card
-            priority
             href="https://news.andyfx.net"
             img={img_redditnews}
             label="Reddit news"
             description="Simple overview of reddit news. Uses incremental static regeneration."
+          />
+          <CardNonstatic
+            href="https://randomsvgface.andyfx.net"
+            img="https://randomsvgface.andyfx.net"
+            label="Random svg face"
+            description="An image url that returns a different avatar image every time."
             flipOrder
           />
+
           <Card
             href="https://svgbattle.andyfx.net"
             img={img_svgbattle}
