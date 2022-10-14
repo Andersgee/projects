@@ -5,9 +5,10 @@ import { AndyfxLogoAnimated } from "src/components/AndyfxLogoAnimated";
 import { AndersSignature } from "src/components/AndersSignature";
 import { Card, CardNonstatic } from "src/components/Card";
 
+import img_svgbattle from "public/projectimages/svgbattle.png";
 import img_sharpest from "public/projectimages/sharpest.png";
 import img_redditnews from "public/projectimages/redditnews.png";
-import img_svgbattle from "public/projectimages/svgbattle.png";
+import img_cssbattlesinsvg from "public/projectimages/cssbattlesinsvg.png";
 import img_julia2wat from "public/projectimages/julia2wat.png";
 import img_weather from "public/projectimages/weather.jpg";
 import img_varavagar from "public/projectimages/varavagar.jpg";
@@ -40,6 +41,12 @@ const Home: NextPage = () => {
 
           <Card
             priority
+            href="https://svgbattle.andyfx.net"
+            img={img_svgbattle}
+            label="SVG battle"
+            description="Write svg images by hand with the least amount of characters. Compete against others and create your own images."
+          />
+          <Card
             href="https://sharpest.andyfx.net"
             img={img_sharpest}
             label="Sharpest pokemon"
@@ -61,9 +68,9 @@ const Home: NextPage = () => {
           />
 
           <Card
-            href="https://svgbattle.andyfx.net"
-            img={img_svgbattle}
-            label="Svg Battle"
+            href="https://cssbattlesinsvg.andyfx.net"
+            img={img_cssbattlesinsvg}
+            label="CSSbattles in svg"
             description="Css Battle but written in svg. Includes some svg animations."
           />
           <Card
