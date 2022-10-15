@@ -15,7 +15,7 @@ type CardProps = {
 
 export function Card({ href, img, label, description, flipOrder, priority }: CardProps) {
   return (
-    <div className="mb-10 w-full shadow-md bg-white dark:bg-neutral-800 rounded-xl overflow-hidden md:grid md:grid-cols-2">
+    <article className="mb-10 w-full shadow-md bg-white dark:bg-neutral-800 rounded-xl overflow-hidden md:grid md:grid-cols-2">
       <a href={href} className={`${flipOrder ? "md:order-last" : ""}`}>
         <div className="relative h-40 md:h-52">
           <Image alt="Svg Battle" src={img} layout="fill" objectFit="cover" priority={priority} placeholder="blur" />
@@ -31,7 +31,7 @@ export function Card({ href, img, label, description, flipOrder, priority }: Car
           view project
         </a>
       </div>
-    </div>
+    </article>
   );
 }
 

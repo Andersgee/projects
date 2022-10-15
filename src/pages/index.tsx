@@ -27,14 +27,14 @@ const Home: NextPage = () => {
       />
       <Nav />
       {/* Header */}
-      <div className="flex justify-center items-center my-16">
+      <header className="flex justify-center items-center my-16">
         <AndyfxLogoAnimated />
         <h1 className="font-thin text-4xl text-neutral-700 dark:text-neutral-200">Andyfx</h1>
-      </div>
+      </header>
 
       {/* Projects */}
       <main className="flex justify-center mt-4 mb-8">
-        <div className="mx-4">
+        <section className="mx-4" title="Latest Projects">
           <div className="flex justify-center mb-6">
             <h2 className="text-2xl text-neutral-600 dark:text-neutral-300 font-normal">Latest Projects</h2>
           </div>
@@ -112,11 +112,11 @@ const Home: NextPage = () => {
             label="Shakespeare AI"
             description="Neural net trained on shakespeare text brought to the web with webassembly."
           />
-        </div>
+        </section>
       </main>
 
       {/* Footer */}
-      <div className="flex justify-center">
+      <footer className="flex justify-center">
         <div className="md:grid md:grid-cols-2 mb-8 flex-1 max-w-xl">
           <div className="flex justify-center mb-8 md:mt-8">
             <div>
@@ -128,7 +128,7 @@ const Home: NextPage = () => {
             <AndersSignature />
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 };
