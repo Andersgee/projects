@@ -41,6 +41,7 @@ const Home: NextPage = () => {
           </div>
 
           <Card
+            priority
             href="https://musker.andyfx.net"
             img={img_musker}
             label="Musker"
@@ -48,7 +49,6 @@ const Home: NextPage = () => {
             flipOrder
           />
           <Card
-            priority
             href="https://svgbattle.andyfx.net"
             img={img_svgbattle}
             label="SVG battle"
