@@ -15,6 +15,7 @@ import img_varavagar from "public/projectimages/varavagar.jpg";
 import img_climatevisualizer from "public/projectimages/climatevisualizer.png";
 import img_wasmmozart from "public/projectimages/wasmMozart.png";
 import img_wasmshakespeare from "public/projectimages/wasmShakespeare.png";
+import img_musker from "public/projectimages/musker.png";
 
 const Home: NextPage = () => {
   return (
@@ -39,6 +40,13 @@ const Home: NextPage = () => {
             <h2 className="text-2xl text-neutral-600 dark:text-neutral-300 font-normal">Latest Projects</h2>
           </div>
 
+          <Card
+            href="https://musker.andyfx.net"
+            img={img_musker}
+            label="Musker"
+            description="A Twitter clone. Share whats happening. With tweets, retweets, replies, likes, personal feed, direct messaging etc."
+            flipOrder
+          />
           <Card
             priority
             href="https://svgbattle.andyfx.net"
