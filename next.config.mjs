@@ -1,6 +1,6 @@
 import { env } from "./src/env/server.mjs"; //importing this ensures the app isn't built with invalid env vars
 import { withPlausibleProxy } from "next-plausible";
-import withPWA from "next-pwa";
+//import withPWA from "next-pwa";
 
 //next-pwa custom worker example: https://github.com/shadowwalker/next-pwa/tree/master/examples/custom-ts-worker
 
@@ -13,7 +13,8 @@ import withPWA from "next-pwa";
  * @constraint {{import('next').NextConfig}}
  */
 function defineNextConfig(config) {
-  return withPWA({ dest: "public" })(withPlausibleProxy()(config));
+  //return withPWA({ dest: "public" })(withPlausibleProxy()(config));
+  return withPlausibleProxy()(config);
 }
 
 export default defineNextConfig({

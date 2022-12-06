@@ -15,19 +15,19 @@ type CardProps = {
 
 export function Card({ href, img, label, description, flipOrder, priority }: CardProps) {
   return (
-    <article className="mb-10 w-full shadow-md bg-white dark:bg-neutral-800 rounded-xl overflow-hidden md:grid md:grid-cols-2">
+    <article className="mb-20 w-full shadow-md bg-white dark:bg-neutral-800 rounded-xl overflow-hidden md:grid md:grid-cols-2">
       <a href={href} className={`${flipOrder ? "md:order-last" : ""}`}>
-        <div className="relative h-40 md:h-52">
+        <div className="relative h-44 md:h-52">
           <Image alt="Svg Battle" src={img} layout="fill" objectFit="cover" priority={priority} placeholder="blur" />
         </div>
       </a>
-      <div className="h-40 p-4 flex flex-col justify-between">
+      <div className="h-44 p-4 flex flex-col justify-between">
         <div>
           <h3 className="mb-2 text-2xl text-neutral-700 dark:text-neutral-200 font-normal">{label}</h3>
           <p className="">{description}</p>
         </div>
 
-        <a className="text-center md:text-left underline decoration-dotted hover:decoration-solid" href={href}>
+        <a className="text-center mt-2 md:text-left underline decoration-dotted hover:decoration-solid" href={href}>
           view project
         </a>
       </div>
@@ -52,18 +52,18 @@ export function CardNonstatic({ href, img, label, description, flipOrder }: Card
   return (
     <div className="mb-10 w-full shadow-md bg-white dark:bg-neutral-800 rounded-xl overflow-hidden md:grid md:grid-cols-2">
       <a href={href} className={`${flipOrder ? "md:order-last" : ""}`}>
-        <div className="h-40 md:h-52">
+        <div className="h-44 md:h-52">
           {/* eslint-disable-next-line @next/next/no-img-element*/}
           <img alt="Svg Battle" src={img} className="bg-white object-contain w-full h-full overflow-hidden" />
         </div>
       </a>
-      <div className="h-40 p-4 flex flex-col justify-between">
+      <div className="h-44 p-4 flex flex-col justify-between">
         <div>
           <h3 className="mb-2 text-2xl text-neutral-700 dark:text-neutral-200 font-normal">{label}</h3>
           <p className="">{description}</p>
         </div>
 
-        <a className="text-center md:text-left underline decoration-dotted hover:decoration-solid" href={href}>
+        <a className="text-center mt-2 md:text-left underline decoration-dotted hover:decoration-solid" href={href}>
           view project
         </a>
       </div>

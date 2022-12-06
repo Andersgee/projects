@@ -21,7 +21,7 @@
   }
 
   p {
-    @apply text-neutral-600 dark:text-neutral-300 text-base font-normal max-w-[55ch] font-serif;
+    @apply text-neutral-600 dark:text-neutral-300 text-base font-normal max-w-[45ch] font-sans;
     word-spacing: 0.5px;
     letter-spacing: 0.15px;
     line-height: 1.55;
