@@ -27,7 +27,7 @@ export function Card({ href, img, label, description, flipOrder, priority }: Car
           <p className="">{description}</p>
         </div>
 
-        <a className="text-center md:text-left underline decoration-dotted hover:decoration-solid" href={href}>
+        <a className="text-center md:text-left hover:underline hover:decoration-solid" href={href}>
           view project
         </a>
       </div>
@@ -63,7 +63,7 @@ export function CardNonstatic({ href, img, label, description, flipOrder }: Card
           <p className="">{description}</p>
         </div>
 
-        <a className="text-center md:text-left underline decoration-dotted hover:decoration-solid" href={href}>
+        <a className="text-center md:text-left hover:underline decoration-dotted hover:decoration-solid" href={href}>
           view project
         </a>
       </div>
