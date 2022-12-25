@@ -30,7 +30,7 @@ const Home: NextPage = () => {
       {/* Header */}
       <header className="flex justify-center items-center my-16">
         <AndyfxLogoAnimated />
-        <h1 className="font-thin text-4xl text-neutral-700 dark:text-neutral-200">Andyfx</h1>
+        <h1 className="font-extralight text-4xl text-neutral-700 dark:text-neutral-100">Andyfx</h1>
       </header>
 
       {/* Projects */}
