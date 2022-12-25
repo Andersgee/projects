@@ -16,6 +16,7 @@ import img_climatevisualizer from "public/projectimages/climatevisualizer.png";
 import img_wasmmozart from "public/projectimages/wasmMozart.png";
 import img_wasmshakespeare from "public/projectimages/wasmShakespeare.png";
 import img_musker from "public/projectimages/musker.png";
+import img_covidstats from "public/projectimages/covidstats.png";
 
 const Home: NextPage = () => {
   return (
@@ -46,26 +47,32 @@ const Home: NextPage = () => {
             img={img_musker}
             label="Musker"
             description="A Twitter clone. Share whats happening. With tweets, retweets, replies, likes, personal feed, direct messaging etc."
-            flipOrder
           />
           <Card
             href="https://svgbattle.andyfx.net"
             img={img_svgbattle}
             label="SVG battle"
             description="Write svg images by hand with the least amount of characters. Compete against others and create your own images."
+            flipOrder
           />
           <Card
             href="https://sharpest.andyfx.net"
             img={img_sharpest}
             label="Sharpest pokemon"
             description="Cast your vote on who the sharpest pokemon is."
+          />
+          <Card
+            href="https://covidstats.andyfx.net"
+            img={img_covidstats}
+            label="Covid stats"
+            description="Simple overview of covid cases in Sweden. Based on official data from Folkhälsomyndigheten."
             flipOrder
           />
           <Card
             href="https://news.andyfx.net"
             img={img_redditnews}
             label="Reddit news"
-            description="Simple overview of reddit news. Uses incremental static regeneration."
+            description="Simple overview of reddit news and reddit worldnews."
           />
           <CardNonstatic
             href="https://randomsvgface.andyfx.net"
@@ -74,7 +81,6 @@ const Home: NextPage = () => {
             description="An image url that returns a different avatar image every time."
             flipOrder
           />
-
           <Card
             href="https://cssbattlesinsvg.andyfx.net"
             img={img_cssbattlesinsvg}
