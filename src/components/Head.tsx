@@ -43,10 +43,10 @@ export function Head({
   domainUrl,
   url,
   imageUrl = "/icons/andyfx-192x192.png",
-  twitter_label1 = "",
-  twitter_data1 = "",
-  twitter_label2 = "",
-  twitter_data2 = "",
+  twitter_label1,
+  twitter_data1,
+  twitter_label2,
+  twitter_data2,
 }: Props) {
   return (
     <NextHead>

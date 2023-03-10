@@ -17,6 +17,7 @@ import img_wasmmozart from "public/projectimages/wasmMozart.png";
 import img_wasmshakespeare from "public/projectimages/wasmShakespeare.png";
 import img_musker from "public/projectimages/musker.png";
 import img_covidstats from "public/projectimages/covidstats.png";
+import img_multiplayerbattle from "public/projectimages/multiplayerbattle.png";
 
 const Home: NextPage = () => {
   return (
@@ -37,10 +38,23 @@ const Home: NextPage = () => {
       {/* Projects */}
       <main className="flex justify-center mt-4 mb-8">
         <section className="mx-4" title="Latest Projects">
-          <div className="flex justify-center mb-6">
-            <h2 className="text-2xl text-neutral-600 dark:text-neutral-300 font-normal">Latest Projects</h2>
+          <div className="flex justify-center mb-10">
+            <div>
+              <h2 className="text-2xl text-neutral-600 text-center mb-4 dark:text-neutral-300 font-normal">
+                Latest Projects
+              </h2>
+              <p>A collection of some of my web related projects that I found fun, interesting or useful.</p>
+            </div>
           </div>
 
+          <Card
+            priority
+            href="https://battle.andyfx.net"
+            img={img_multiplayerbattle}
+            label="Multiplayer battle"
+            description="A simple multiplayer game. Built with webgl, webassembly and rust."
+            flipOrder
+          />
           <Card
             priority
             href="https://musker.andyfx.net"
