@@ -18,6 +18,7 @@ import img_wasmshakespeare from "public/projectimages/wasmShakespeare.png";
 import img_musker from "public/projectimages/musker.png";
 import img_covidstats from "public/projectimages/covidstats.png";
 import img_multiplayerbattle from "public/projectimages/multiplayerbattle.png";
+import img_howler from "public/projectimages/howler.png";
 
 const Home: NextPage = () => {
   return (
@@ -49,6 +50,13 @@ const Home: NextPage = () => {
 
           <Card
             priority
+            href="https://howler.andyfx.net"
+            img={img_howler}
+            label="Howler"
+            description="Looking for something to do? A place to quickly find or plan stuff to do with friends, or with anyone really."
+          />
+          <Card
+            priority
             href="https://battle.andyfx.net"
             img={img_multiplayerbattle}
             label="Multiplayer battle"
@@ -56,7 +64,6 @@ const Home: NextPage = () => {
             flipOrder
           />
           <Card
-            priority
             href="https://musker.andyfx.net"
             img={img_musker}
             label="Musker"
