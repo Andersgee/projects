@@ -5,8 +5,8 @@ import { ScreenSizeIndicator } from "#src/app/_components/ScreensizeIndicator";
 import { Providers } from "./Providers";
 
 export const metadata = seo({
-  title: "Boilerplate app",
-  description: "Boilerplate app",
+  title: "andyfx",
+  description: "Andyfx latest web projects and contact.",
   url: "/",
   image: "/icons/favicon-512x512.png",
 });
