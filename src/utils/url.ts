@@ -22,7 +22,8 @@ export function encodeParams(params: Record<string, string | number | boolean>) 
  */
 export function absUrl(url = "") {
   const path = url === "/" ? "" : url;
-  if (process.env.NEXT_PUBLIC_DOMAIN_URL) return `https://${process.env.NEXT_PUBLIC_DOMAIN_URL}${path}`;
+  //if (process.env.NEXT_PUBLIC_DOMAIN_URL) return `https://${process.env.NEXT_PUBLIC_DOMAIN_URL}${path}`;
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}${path}`;
   return `http://localhost:${process.env.PORT ?? 3000}${path}`;
 }
 
