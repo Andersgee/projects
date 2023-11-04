@@ -1,4 +1,5 @@
 import "./src/utils/validate-process-env.mjs";
+import { withPlausibleProxy } from "next-plausible";
 
 //matching tailwind sizes:
 //                       sm   md    lg    xl    2xl   3xl...
@@ -14,4 +15,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default withPlausibleProxy()(nextConfig);
