@@ -1,22 +1,16 @@
+"use client";
+
 import { useRef } from "react";
 import { useIntersectionObserver } from "src/hooks/useIntersectionObserver";
 
 export function AndersSignature() {
   const ref = useRef(null);
   const entry = useIntersectionObserver(ref, { freezeOnceVisible: false });
+
   const isIntersecting = !!entry?.isIntersecting;
-
   return (
-    <svg
-      ref={ref}
-      width="232"
-      height="107"
-      viewBox="0 0 432 207"
-      fill="none"
-      className="stroke-neutral-600 dark:stroke-neutral-300"
-    >
+    <svg ref={ref} width="232" height="107" viewBox="0 0 432 207" fill="none" className="stroke-color-neutral-600">
       <title>Anders Signature</title>
-
       {isIntersecting && (
         <path
           className="animate-strokedraw"

@@ -1,28 +1,17 @@
-import { env } from "./src/env/server.mjs"; //importing this ensures the app isn't built with invalid env vars
-import { withPlausibleProxy } from "next-plausible";
-//import withPWA from "next-pwa";
+import "./src/utils/validate-process-env.mjs";
 
-//next-pwa custom worker example: https://github.com/shadowwalker/next-pwa/tree/master/examples/custom-ts-worker
+//matching tailwind sizes:
+//                       sm   md    lg    xl    2xl   3xl...
+const DEVICE_SIZES = [640, 768, 1024, 1280, 1536, 2048];
+//  w-               6   8   12  16  24  32   64   96
+const IMAGE_SIZES = [24, 32, 48, 64, 96, 128, 256, 384];
 
-/**
- * Don't be scared of the generics here.
- * All they do is to give us autocompletion when using this.
- *
- * @template {import('next').NextConfig} T
- * @param {T} config - A generic parameter that flows through to the return type
- * @constraint {{import('next').NextConfig}}
- */
-function defineNextConfig(config) {
-  //return withPWA({ dest: "public" })(withPlausibleProxy()(config));
-  return withPlausibleProxy()(config);
-}
-
-export default defineNextConfig({
-  reactStrictMode: true,
-  swcMinify: true,
-  // Next.js i18n docs: https://nextjs.org/docs/advanced-features/i18n-routing
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    imageSizes: IMAGE_SIZES,
+    deviceSizes: DEVICE_SIZES,
   },
-});
+};
+
+export default nextConfig;

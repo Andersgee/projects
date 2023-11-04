@@ -1,37 +1,37 @@
 {
-  "name": "redditnews",
+  "name": "projects",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "bs": "next build && next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "^13.0.6",
-    "next": "^13.0.6",
-    "next-plausible": "^3.6.4",
-    "next-themes": "^0.2.1",
+    "clsx": "^2.0.0",
+    "next": "14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sharp": "^0.31.2",
-    "zod": "^3.18.0"
+    "sharp": "^0.32.6",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/node": "18.0.0",
-    "@types/react": "18.0.14",
-    "@types/react-dom": "18.0.5",
-    "@typescript-eslint/eslint-plugin": "^5.33.0",
-    "@typescript-eslint/parser": "^5.33.0",
-    "autoprefixer": "^10.4.9",
-    "eslint": "8.22.0",
-    "eslint-config-next": "^13.0.6",
-    "postcss": "^8.4.16",
-    "tailwindcss": "^3.1.8",
-    "typescript": "4.7.4"
-  },
-  "ct3aMetadata": {
-    "initVersion": "5.10.3"
+    "@types/eslint": "^8.44.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "autoprefixer": "^10",
+    "eslint": "^8.51.0",
+    "eslint-config-next": "14.0.0",
+    "postcss": "^8",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "tailwindcss": "^3",
+    "typescript": "^5"
   }
 }
