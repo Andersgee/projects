@@ -9,9 +9,10 @@ type Props = {
   href: string;
   title: string;
   description: string;
+  priority?: boolean;
 };
 
-export function Card({ className, src, title, href, description }: Props) {
+export function Card({ className, src, title, href, description, priority }: Props) {
   return (
     <a
       href={href}
@@ -22,11 +23,11 @@ export function Card({ className, src, title, href, description }: Props) {
       )}
     >
       <div className="relative h-48 max-w-[384px] ">
-        <Image src={src} fill alt={title} sizes={imageSizes("w-96")} className="object-cover" />
+        <Image priority={priority} src={src} fill alt={title} sizes={imageSizes("w-96")} className="object-cover" />
         <div className="absolute h-48 w-full bg-color-accent-highlight-50 opacity-0 group-hover:opacity-50"></div>
       </div>
       <article className="p-4">
-        <h3 className="text-xl">{title}</h3>
+        <h2 className="text-xl">{title}</h2>
         <p>{description}</p>
       </article>
     </a>

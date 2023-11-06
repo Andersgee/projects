@@ -41,6 +41,7 @@ export default function Page() {
           </div>
           <div className="flex flex-col gap-10 md:flex-row md:flex-wrap md:justify-center">
             <Card
+              priority
               href="https://howler.andyfx.net"
               src={img_howler}
               title="Howler"
