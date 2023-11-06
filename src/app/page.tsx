@@ -19,7 +19,7 @@ import img_howler from "public/projectimages/howler.png";
 import img_randomsvgface from "public/projectimages/randomsvgface.png";
 
 export const metadata = seo({
-  title: "andyfx",
+  title: "Andyfx - latest projects and contact",
   description: "Andyfx latest web projects and contact.",
   url: "/",
   image: "/icons/favicon-512x512.png",
