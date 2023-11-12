@@ -22,7 +22,7 @@ export const metadata = seo({
   title: "Andyfx - latest projects and contact",
   description: "Andyfx latest web projects and contact.",
   url: "/",
-  image: "/icons/favicon-512x512.png",
+  image: "/andyfx.png",
 });
 
 export default function Page() {
