@@ -2,22 +2,6 @@ import { Card } from "./_components/Card";
 import { seo } from "#src/utils/seo";
 import { AndersSignature } from "./_components/AndersSignature";
 
-import img_svgbattle from "public/projectimages/svgbattle.png";
-//import img_sharpest from "public/projectimages/sharpest.png";
-import img_redditnews from "public/projectimages/redditnews.png";
-import img_cssbattlesinsvg from "public/projectimages/cssbattlesinsvg.png";
-import img_julia2wat from "public/projectimages/julia2wat.png";
-import img_weather from "public/projectimages/weather.jpg";
-import img_varavagar from "public/projectimages/varavagar.jpg";
-import img_climatevisualizer from "public/projectimages/climatevisualizer.png";
-import img_wasmmozart from "public/projectimages/wasmMozart.png";
-import img_wasmshakespeare from "public/projectimages/wasmShakespeare.png";
-import img_musker from "public/projectimages/musker.png";
-import img_covidstats from "public/projectimages/covidstats.png";
-import img_multiplayerbattle from "public/projectimages/multiplayerbattle.png";
-import img_howler from "public/projectimages/howler.png";
-import img_randomsvgface from "public/projectimages/randomsvgface.png";
-
 export const metadata = seo({
   title: "Andyfx - latest projects and contact",
   description: "Andyfx latest web projects and contact.",
@@ -43,20 +27,20 @@ export default function Page() {
             <Card
               priority
               href="https://howler.andyfx.net"
-              src={img_howler}
+              imageUrl="/projectimages/howler.webp"
               title="Howler"
               description="Looking for something to do? A place to quickly find or plan stuff to do with friends, or with anyone really."
             />
 
             <Card
               href="https://musker.andyfx.net"
-              src={img_musker}
+              imageUrl="/projectimages/musker.webp"
               title="Musker"
               description="A Twitter clone. Share whats happening. With tweets, retweets, replies, likes, personal feed, direct messaging etc."
             />
             <Card
               href="https://svgbattle.andyfx.net"
-              src={img_svgbattle}
+              imageUrl="/projectimages/svgbattle.webp"
               title="SVG battle"
               description="Write svg images by hand with the least amount of characters. Compete against others and create your own images."
             />
@@ -70,69 +54,69 @@ export default function Page() {
             */}
             <Card
               href="https://covidstats.andyfx.net"
-              src={img_covidstats}
+              imageUrl="/projectimages/covidstats.webp"
               title="Covid stats"
               description="Simple overview of covid cases in Sweden. Based on official data from Folkhälsomyndigheten."
             />
             <Card
               href="https://news.andyfx.net"
-              src={img_redditnews}
+              imageUrl="/projectimages/redditnews.webp"
               title="Reddit news"
               description="Simple overview of reddit news and reddit worldnews."
             />
 
             <Card
               href="https://randomsvgface.andyfx.net"
-              src={img_randomsvgface}
+              imageUrl="/projectimages/randomsvgface.webp"
               title="Random svg face"
               description="An image url that returns a different avatar image every time."
             />
 
             <Card
               href="https://cssbattlesinsvg.andyfx.net"
-              src={img_cssbattlesinsvg}
+              imageUrl="/projectimages/cssbattlesinsvg.webp"
               title="CSSbattles in svg"
               description="Css Battle but written in svg. Includes some svg animations."
             />
             <Card
               href="https://julia2wat.herokuapp.com"
-              src={img_julia2wat}
+              imageUrl="/projectimages/julia2wat.webp"
               title="julia2wat"
               description="Online version of WebAssemblyText.jl. Convert Julia to WebAssembly text."
             />
             <Card
               href="https://weather.andyfx.net/"
-              src={img_weather}
+              imageUrl="/projectimages/weather.webp"
               title="Weather"
               description="How much water a tree needs and weather forecast. Both table and visual format."
             />
             <Card
               href="https://www.varavagar.se"
-              src={img_varavagar}
+              imageUrl="/projectimages/varavagar.webp"
               title="Sweden Roads"
               description="Map, information and maintenance needs for public roads of Sweden."
             />
             <Card
               href="https://www.climatevisualizer.com"
-              src={img_climatevisualizer}
+              imageUrl="/projectimages/climatevisualizer.webp"
               title="Climate Visualizer"
               description="What the worlds carbon budget means on a local municipality level."
             />
             <Card
               href="https://battle.andyfx.net"
-              src={img_multiplayerbattle}
+              imageUrl="/projectimages/multiplayerbattle.webp"
               title="Multiplayer battle"
               description="A simple multiplayer game. Built with webgl, webassembly and rust."
             />
             <Card
               href="https://andersgee.github.io/posts/wasmMozart/index.html"
-              src={img_wasmmozart}
+              imageUrl="/projectimages/wasmMozart.webp"
               title="Mozart AI"
               description="Neural net trained on mozart music brought to the web with webassembly."
             />
             <Card
               href="https://andersgee.github.io/posts/wasmShakespeare/index.html"
-              src={img_wasmshakespeare}
+              imageUrl="/projectimages/wasmShakespeare.webp"
               title="Shakespeare AI"
               description="Neural net trained on shakespeare text brought to the web with webassembly."
             />

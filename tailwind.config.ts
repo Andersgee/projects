@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unsafe-return */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { type Config } from "tailwindcss";
 //import { fontFamily } from "tailwindcss/defaultTheme";
 import { type ScreensConfig } from "tailwindcss/types/config";
 import defaultTheme from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
+import { TAILWIND_screens } from "./src/utils/image-sizes-constants.mjs";
 
 //https://tailwindcss.com/docs/configuration#scaffolding-the-entire-default-configuration
 
@@ -21,11 +24,12 @@ export default {
   presets: [],
   darkMode: "media",
   theme: {
-    screens: DEVICE_SIZES,
-    container: {
-      screens: DEVICE_SIZES,
+    screens: TAILWIND_screens,
+    container: ({ theme }) => ({
+      //screens: TAILWIND_screens,
+      screens: theme("screens"),
       //center: true,
-    },
+    }),
     fontFamily: {
       sans: ["var(--font-sans)", ...defaultTheme.fontFamily.sans],
       serif: [...defaultTheme.fontFamily.serif],

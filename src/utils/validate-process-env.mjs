@@ -11,6 +11,7 @@ import { z } from "zod";
  */
 export const envSchema = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]),
+  ///NEXT_PUBLIC_DOMAIN_URL: z.string(),
 
   //GOOGLE_CLIENT_ID: z.string(),
   //GOOGLE_CLIENT_SECRET: z.string(),
@@ -38,9 +39,6 @@ function formatErrors(errors) {
 const parsedSchema = envSchema.safeParse(process.env);
 
 if (!parsedSchema.success) {
-  console.error(
-    "❌ Invalid env vars:\n",
-    ...formatErrors(parsedSchema.error.format())
-  );
+  console.error("❌ Invalid env vars:\n", ...formatErrors(parsedSchema.error.format()));
   throw new Error("Invalid environment variables");
 }
