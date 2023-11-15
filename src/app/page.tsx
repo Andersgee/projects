@@ -33,6 +33,7 @@ export default function Page() {
             />
 
             <Card
+              priority
               href="https://musker.andyfx.net"
               imageUrl="/projectimages/musker.webp"
               title="Musker"
