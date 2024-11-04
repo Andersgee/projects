@@ -26,14 +26,19 @@ export default function Page() {
           <div className="flex flex-col gap-10 md:flex-row md:flex-wrap md:justify-center">
             <Card
               priority
+              href="https://classical-piano-gpt.andyfx.net/"
+              imageUrl="/projectimages/classical-piano-gpt.webp"
+              title="Classical piano GPT"
+              description="A neural net trained from scratch on classical piano music."
+            />
+            <Card
+              priority
               href="https://howler.andyfx.net"
               imageUrl="/projectimages/howler.webp"
               title="Howler"
               description="Looking for something to do? A place to quickly find or plan stuff to do with friends, or with anyone really."
             />
-
             <Card
-              priority
               href="https://musker.andyfx.net"
               imageUrl="/projectimages/musker.webp"
               title="Musker"
