@@ -29,7 +29,7 @@ export default function Page() {
               href="https://run.andyfx.net/"
               imageUrl="/projectimages/run-like-the-wind.webp"
               title="Run like the wind"
-              description="Max effort equivalens and workout calculator based on your individual threshold pace."
+              description="Max effort equivalents and workout calculator based on your individual threshold running pace."
             />
             <Card
               priority
