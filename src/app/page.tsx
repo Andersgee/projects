@@ -26,7 +26,14 @@ export default function Page() {
           <div className="flex flex-col gap-10 md:flex-row md:flex-wrap md:justify-center">
             <Card
               priority
-              href="https://classical-piano-gpt.andyfx.net/"
+              href="https://run.andyfx.net/"
+              imageUrl="/projectimages/run-like-the-wind.webp"
+              title="Run like the wind"
+              description="Max effort equivalens and workout calculator based on your individual threshold pace."
+            />
+            <Card
+              priority
+              href="https://classical-piano-gpt.andyfx.net"
               imageUrl="/projectimages/classical-piano-gpt.webp"
               title="Classical piano GPT"
               description="A neural net trained from scratch on classical piano music."
